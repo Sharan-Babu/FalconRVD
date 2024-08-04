@@ -65,7 +65,7 @@ Output:
 	        {"role": "user", "content": f"Input: {user_query}"},
 	    ],
 	    max_tokens = 1000,
-	    temperature = 0.1,
+	    temperature = 0.5,
 	).choices[0].message.content
 
 	return response
