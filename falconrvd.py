@@ -68,7 +68,7 @@ Output:
 	        {"role": "user", "content": f"Input: {user_query}"},
 	    ],
 	    max_tokens = 1000,
-	    temperature = 0,
+	    temperature = 0.1,
 	).choices[0].message.content
 
 	return response
@@ -125,7 +125,7 @@ elif template == "Template 2":
 
 elif template == "Template 3":
 	ta_value = "Best coffee beans for brewing the perfect cup of Java\nSetting up Eclipse IDE for Java programming on Windows 10\nJava island's rich cultural heritage and tourist attractions\nTop 5 Java cafes in Seattle with great working environments\nDebugging techniques for identifying and resolving system errors"
-	uq_value = "Java development environment setup"
+	uq_value = "environment setup - java"
 
 else:
 	ta_value = ""
